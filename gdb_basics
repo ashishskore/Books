@@ -1,0 +1,13 @@
+gdb -c corefile  -- gives name of binary which created core file
+q  -- quit from current gdb to launch binary
+>gdb binary_name corefile
+thread apply all bt
+thread number -- number of thread from above command in which crashed
+bt -- back trace or 
+bt full to see full trace
+frame number -- # of fn in bt o/p
+p ptr, p/x val, p/x &val, p/x *ptr    different ways to use p command
+x -- also be used like p bt used to check memory 
+info locals -- to see info of all the local variables
+info args   -- to see info of all the arguments
+disass fun_name   -- in case to see disassembly of function
